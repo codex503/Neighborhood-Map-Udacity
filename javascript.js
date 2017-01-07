@@ -11,28 +11,28 @@
         // These are the real estate listings that will be shown to the user.
         // Normally we'd have these in a database instead.
         var locations = [
-          {title: 'Park Ave Penthouse', 
-           location: {lat: 40.7713024, lng: -73.9632393}
+          {title: 'Vapiano', 
+           location: {lat: 40.738992, lng: -73.992482}
           },
           
           {title: "S'MAC", 
            location: {lat: 40.746166, lng: -73.979275}
           },
 
-          {title: 'Union Square Open Floor Plan', 
-           location: {lat: 40.7347062, lng: -73.9895759}
+          {title: 'Amelie Wine Bar', 
+           location: {lat: 40.735989, lng: -73.997670}
           },
           
-          {title: 'East Village Hip Studio', 
-           location: {lat: 40.7281777, lng: -73.984377}
+          {title: 'Da Marcella', 
+           location: {lat: 40.727556, lng: -73.999987}
           },
           
-          {title: 'TriBeCa Artsy Bachelor Pad', 
-           location: {lat: 40.7195264, lng: -74.0089934}
+          {title: 'Carroll Place', 
+           location: {lat: 40.732784, lng: -74.001135}
           },
 
-          {title: 'Chinatown Homey Space', 
-           location: {lat: 40.7180628, lng: -73.9961237}
+          {title: "Olive's", 
+           location: {lat: 40.726353, lng: -74.002082}
           }
         ];
         var largeInfowindow = new google.maps.InfoWindow();
