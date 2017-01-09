@@ -10,15 +10,17 @@
   </head>
   <body>
     <div id="map"></div>
-
+    <input type="text" id="mapsearch">
     <!-- buttons to hide or show listings -->
     <div class = "options-box">
+
       <input id="show-listings" type="button" value="show Listings">
       <input id="hide-listings" type="button" value="hide Listings">
     </div>
    
+  
    <script src="javascript.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCw3S2vR3NNKnsQY7ZMTsT1ZFKw549USq8&v=3&callback=initMap"
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCw3S2vR3NNKnsQY7ZMTsT1ZFKw549USq8&v=3&callback=initMap&libraries=places"
     async defer></script>
   </body>
 </html>
