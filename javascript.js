@@ -1,6 +1,7 @@
  var map;
       // Create a new blank array for all the listing markers.
       var markers = [];
+      var vm;
       function initMap() {
         // Constructor creates a new map - only center and zoom are required.
         map = new google.maps.Map(document.getElementById('map'), {
@@ -48,7 +49,8 @@
             position: position,
             title: title,
             animation: google.maps.Animation.DROP,
-            id: i
+            id: i,
+            map: map
           });
           // Push the marker to our array of markers.
           markers.push(marker);
@@ -57,7 +59,8 @@
             populateInfoWindow(this, largeInfowindow);
           });
         }
-        
+        vm = new ViewModel();
+        ko.applyBindings(vm);
       }
 
 
@@ -76,6 +79,12 @@
           });
         }
       }
-
+      var ViewModel = function(){
+        var self = this;
+        self.places = ko.observableArray(markers);
+        self.showInfo = function(location){
+          google.maps.event.trigger(location,'click');
+        }
+      }
 
       
