@@ -13,11 +13,12 @@
     <input type="text" id="mapsearch">
     <!-- buttons to hide or show listings -->
     <div class = "options-box">
-
-      
+      <ul data-bind = "foreach: places">
+        <li data-bind = 'text: title, click: $root.showInfo'></li>
+      </ul>
     </div>
    
-  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.4.1/knockout-min.js"></script>
    <script src="javascript.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCw3S2vR3NNKnsQY7ZMTsT1ZFKw549USq8&v=3&callback=initMap&libraries=places"
     async defer></script>
